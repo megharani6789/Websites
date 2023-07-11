@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration for Treatments</title>
+    <style>
+        h2{
+            text-align: center;
+            margin-bottom: -163px;
+        }
+        
+    </style>
+</head>
+<body style="background-image:url(background.jpg);
+background-repeat: no-repeat;
+background-size: cover;">
+    <h2>Treatment Form</h2>
+    <form action="college.php" style="    border: 2px solid black;margin: 187px;
+    padding: 50px;
+    background-color: rgb(238, 249, 219);">
+
+        <label for="myname"> NAME: <input type="text" id="MyName"></label>
+        <br><br>
+        <label for="mystreet" style="display: inline-block; margin-right: 10px;"> AGE: <input type="number" id="MyStreet"></label>
+        <br><br>
+        <label for="mystreet"> CITY: <input type="text" id="Mycity"></label>
+        <br><br>
+        <div>
+            <!-- whatever type we want we can write in type  -->
+            <!-- name is how backend file is going to recognise the info  -->
+            <!-- id is required for labeling  -->
+            <label for="Number">Phone Number: <input type="Number" name="MyNumber" id="Number"></label>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: <input type="email" name="MyEmail" id="email"> </label>
+        </div>
+        <br>
+        <div>
+            <label for="date"> Date: <input type="date" name="Date" id="date"></label>
+        </div>
+        <br>
+        <div>
+            
+            Gender: Male: <input type="radio" name="MyGender"> FeMale: <input type="radio" name="MyGender"> Others:
+            <input type="radio" name="MyGender">
+        </div>
+        <div>
+            <br><br>
+            Treatment For: Anxiety disorder: <input type="checkbox" name="MyGender"> Mood disorder <input type="checkbox" name="MyGender"> Psychotic disorder:
+            <input type="checkbox" name="MyGender">Personality disorders:
+            <input type="checkbox" name="MyGender">Eating-Disorder:
+            <input type="checkbox" name="MyGender"> <br> Others:
+            <textarea name="other problem" id="problem" cols="30" rows="10" placeholder="Describe your problems"></textarea>
+        </div>
+        <br><br>
+        <div>
+            <label for="Country">Rate Yourself: </label>
+            <select name="mycountry" id="Country">
+                <!-- option for selecting the name  -->
+                <option value="BEST">Best</option>
+                <option value="OK OK" >OK OK </option>
+                <option value="BAD">Bad</option>
+                <option value="VERY BAD">Very Bad</option>
+            </select>
+        </div>
+        <br><br>
+        
+    <div>
+        What You Feel About Yourself Right Now: <br><br> <textarea name="Mytext" cols="30" rows="10" placeholder="(comment about you feelings)"></textarea>
+
+    </div>
+    <h3>Payment Method:</h3>
+    <br>
+    <label for="payment"><input type="radio" name="mypaymentmethod" id="payment">VISA </label> <label for="payment1"> <input type="radio" name="mypaymentmethod" id="payment1">Master Card </label>   <label for="payment2"><input
+        type="radio" name="mypaymentmethod" id="payment2">Discover </label> <label for="payment3"> <input type="radio" name="mypaymentmethod" id="payment3">Check </label>
+        <br><br>
+        <div>
+
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Clear Now">
+        </div>
+        </form>
+    
+</body>
+</html>
